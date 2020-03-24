@@ -39,6 +39,8 @@ class PongBall(Widget):
 
 class PongGame(Widget):
     ball = ObjectProperty(None)
+    player1 = ObjectProperty(None)
+    player2 = ObjectProperty(None)
 
     def serve_ball(self):
         self.ball.center = self.center
