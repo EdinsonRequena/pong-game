@@ -38,6 +38,7 @@ class PongBall(Widget):
 
 
 class PongGame(Widget):
+    # Checkpoint to tomorrow
     ball = ObjectProperty(None)
     player1 = ObjectProperty(None)
     player2 = ObjectProperty(None)
