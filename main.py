@@ -9,6 +9,18 @@ from kivy.vector import Vector
 from kivy.clock import Clock
 from random import randint
 
+class PongPaddle(Widget):
+    score = NumericProperty(0)
+
+    def bounce_ball(self, ball):
+        if self.collide_widget(ball):
+            vel_x, vel_y = ball.velocity
+            offset = (ball.center_y - self.center_y) / (self.height / 2)
+            bounced = Vector(-1 * vel_x, vel_y)
+            vel = bounced * 1.1
+            ball.velocity = vel.x, vel.y * offset
+
+
 class PongBall(Widget):
 
     # velocity of the ball on x and y axies
