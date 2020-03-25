@@ -82,6 +82,8 @@ class PongGame(Widget):
 
 class PongApp(App):
     
+    title = '#StayAtHome'
+
     def build(self):
         game = PongGame()
         game.serve_ball()
