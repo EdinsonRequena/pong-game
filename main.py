@@ -38,14 +38,16 @@ class PongBall(Widget):
 
 
 class PongGame(Widget):
-    # Checkpoint to tomorrow
+    # The ball game
     ball = ObjectProperty(None)
+    
+    # The players game
     player1 = ObjectProperty(None)
     player2 = ObjectProperty(None)
 
-    def serve_ball(self):
+    def serve_ball(self, vel = (4, 0)):
         self.ball.center = self.center
-        self.ball.velocity = Vector(4, 0).rotate(randint(0, 360))
+        self.ball.velocity = vel
         
     
     def update(self, dt):
