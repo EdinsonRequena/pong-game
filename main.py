@@ -18,7 +18,7 @@ class PongPaddle(Widget):
             offset = (ball.center_y - self.center_y) / (self.height / 2)
             bounced = Vector(-1 * vel_x, vel_y)
             vel = bounced * 1.1
-            ball.velocity = vel.x, vel.y * offset
+            ball.velocity = vel.x, vel.y + offset
 
 
 class PongBall(Widget):
@@ -61,10 +61,6 @@ class PongGame(Widget):
         # bounce ball off bottom top
         if (self.ball.y < self.y) or (self.ball.top > self.top):
             self.ball.velocity_y *= -1
-        
-        # bounce off left and right
-        if self.ball.x < 0 or self.ball.right > self.width:
-            self.ball.velocity_x *= -1
 
         # went of to a side to score point?
         if self.ball.x < self.x:
