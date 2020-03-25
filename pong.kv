@@ -20,12 +20,14 @@
     player2: player_right
     
     canvas:
+        Color:
+            rgba: 155,0,51,53
         Rectangle:
             pos: self.center_x - 5, 0
             size: 10, self.height
     
     Label:
-        font_size: 70  
+        font_size: 70
         center_x: root.width / 4
         top: root.top - 50
         text: str(root.player1.score)
@@ -37,15 +39,24 @@
         text: str(root.player2.score)
     
     PongBall:
+        canvas:
+            Color:
+                rgba: 155,0,51,53
         id: pong_ball
         center: self.parent.center
         
     PongPaddle:
+        #canvas:
+           # Color:
+            #    rgba: 155,0,51,53
         id: player_left
         x: root.x
         center_y: root.center_y
  
     PongPaddle:
+        #canvas:
+            #Color:
+             #   rgba: 155,0,51,53
         id: player_right
         x: root.width - self.width
         center_y: root.center_y
