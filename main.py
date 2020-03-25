@@ -46,12 +46,17 @@ class PongGame(Widget):
     player2 = ObjectProperty(None)
 
     def serve_ball(self, vel = (4, 0)):
+        ''' This function makes the movement ball be real '''
         self.ball.center = self.center
         self.ball.velocity = vel
         
     
     def update(self, dt):
         self.ball.move()
+
+        # bounce of paddles
+        self.player1.bounce_ball(self.ball)
+        self.player2.bounce_ball(self.ball)
 
         # bounce off top and bottom
         if self.ball.y < 0 or self.ball.top > self.height:
@@ -60,6 +65,15 @@ class PongGame(Widget):
         # bounce off left and right
         if self.ball.x < 0 or self.ball.right > self.width:
             self.ball.velocity_x *= -1
+
+        # went of to a side to score point?
+        if self.ball.x < self.x:
+            self.player2.score += 1
+            self.serve_ball(vel = (4, 0))
+        
+        if self.ball.x > self.width:
+            self.player1.score += 1
+            self.serve_ball(velr = (-4, 0))
 
 
 class PongApp(App):
