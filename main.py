@@ -58,8 +58,8 @@ class PongGame(Widget):
         self.player1.bounce_ball(self.ball)
         self.player2.bounce_ball(self.ball)
 
-        # bounce off top and bottom
-        if self.ball.y < 0 or self.ball.top > self.height:
+        # bounce ball off bottom top
+        if (self.ball.y < self.y) or (self.ball.top > self.top):
             self.ball.velocity_y *= -1
         
         # bounce off left and right
@@ -73,7 +73,7 @@ class PongGame(Widget):
         
         if self.ball.x > self.width:
             self.player1.score += 1
-            self.serve_ball(velr = (-4, 0))
+            self.serve_ball(vel = (-4, 0))
 
 
     def on_touch_move(self, touch):
