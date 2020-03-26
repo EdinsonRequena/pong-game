@@ -19,7 +19,7 @@ $ pip install kivy
 $ python3 main.py
 ```
 
-### Enjoy It ❤️
+### Enjoy ❤️
 
 ![alt text](https://raw.githubusercontent.com/EdinsonRequena/pong-game/master/stayathome.png)
 
@@ -31,15 +31,16 @@ $ python3 main.py
 - [Instagram](https://instagram.com/edinsonrequena)
 - [Twitter](https://twitter.com/requenaea)
 
-If you want to join, these are some of the modules to develop, but don't limit yourself to it.
-
+If you want to join to the project, here are some of the modules to develop:
 ```
 Add main menu
 Pause the game
 Set limit score
 ```
+Don't limit yourself to it
 
-This video game was developed as part of a project to recreate retro video games and #StayAtHome
+
+This video game was developed as part of a project to recreate retro video games. #StayAtHome
 
 ---
 From Venezuela with ❤️ for the world.
