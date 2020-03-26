@@ -37,7 +37,7 @@ Add main menu
 Pause the game
 Set limit score
 ```
-Don't limit yourself to it
+Don't limit yourself only to these modules.
 
 
 This video game was developed as part of a project to recreate retro video games. #StayAtHome
