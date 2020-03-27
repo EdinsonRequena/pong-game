@@ -21,6 +21,7 @@ class PongPaddle(Widget):
 
 
 class PongBall(Widget):
+    ''' Class of the ball property '''
 
     # velocity of the ball on x and y axies
     velocity_x = NumericProperty(0)
@@ -80,7 +81,8 @@ class PongGame(Widget):
 
 
 class PongApp(App):
-    
+    ''' Main Class '''
+
     title = '#StayAtHome'
 
     def build(self):
