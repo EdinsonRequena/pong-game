@@ -1,14 +1,12 @@
 
 """
 
-
 Developed by Edinson Requena, Feel free to modify, download or copy it. #StayAtHome
 
 Github: edinsonrequena
 Instagram: edinsonrequena
 Medium: edinsonrequena
 Twitter: requenaea
-
 
 """
 import kivy
