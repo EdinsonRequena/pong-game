@@ -1,3 +1,16 @@
+
+"""
+
+
+Developed by Edinson Requena, Feel free to modify, download or copy it. #StayAtHome
+
+Github: edinsonrequena
+Instagram: edinsonrequena
+Medium: edinsonrequena
+Twitter: requenaea
+
+
+"""
 import kivy
 
 from kivy.app import App
@@ -83,7 +96,7 @@ class PongGame(Widget):
 class PongApp(App):
     ''' Main Class '''
 
-    title = '#StayAtHome'
+    title = 'Pong Game by @edinsonrequena #StayAtHome'
 
     def build(self):
         game = PongGame()
