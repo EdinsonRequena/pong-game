@@ -1,4 +1,4 @@
-# Pong Game 🚀
+# Pong Game :ping_pong:	
 
 __Recreation of the Atari's video game Pong__
 
